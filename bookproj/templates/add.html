@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Enter the book name "><br><br>
+     <input type="text" name="desc" placeholder="Book description "><br><br>
+     <input type="text" name="price" placeholder="bookprice"><br><br>
+     <input type="file" name="img"><br><br>
+    <input type="submit">
+
+</form>
+{% endblock %}
